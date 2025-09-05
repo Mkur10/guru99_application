@@ -9,5 +9,5 @@ Feature: Bank Registration and Login
     Then User should get User ID and Password
     Given User is on Bank Login Page
     When User logs in with generated credentials
-    Then User should see welcome message containing "Manger"
+    Then User should see welcome message containing "Manager"
     And User logs out
