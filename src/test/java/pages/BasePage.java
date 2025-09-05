@@ -54,4 +54,10 @@ public class BasePage {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         new org.openqa.selenium.support.ui.Select(element).selectByVisibleText(value);
     }
+    // Click element using JavaScript
+    protected void javascriptClick(By locator) {
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+    }
+
 }

@@ -15,6 +15,6 @@ public class ManageHomePage extends BasePage {
     }
 
     public void clickLogout() {
-        click(logoutButton);
+        javascriptClick(logoutButton);
     }
 }
